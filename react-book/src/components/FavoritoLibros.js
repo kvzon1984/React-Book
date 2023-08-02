@@ -5,6 +5,7 @@ import Button from "../helpers/Button";
 import esLocale from 'date-fns/locale/es';
 import Swal from 'sweetalert2'
 import React from 'react';
+import { NavLink } from "../helpers/Navlink";
 
 const FavoritosLibros = () => {
     const { favoritos, setFavoritos } = useContext(FavoritosContext)
@@ -48,8 +49,14 @@ const FavoritosLibros = () => {
                                     <td className="border border-slate-600 px-4">{format(new Date(favorito.released),'dd-MM-yyyy', {
                                     locale: esLocale,
                                 })}</td>
-                                    <td>
-                                        <Button className="bg-[#b91c1c] px-4 rounded-lg h-10 hover:bg-[#1d4ed8] " onClick={(e)=>deleteFavorito(index)} > Eliminar </Button>
+                                    <td className="flex space-x-2">
+                                        <NavLink
+                                            to={`/detalles-libros/${favorito.isbn}`}
+                                            className=" bg-[#2563eb] mt-3 py-3 md:px-8 rounded-lg h-12 hover:bg-[#1d4ed8]"
+                                            >
+                                            Ver Detalle
+                                        </NavLink>
+                                        <Button className="bg-[#dc2626] px-4 rounded-lg h-12 hover:bg-[#b91c1c] " onClick={(e)=>deleteFavorito(index)} > Eliminar </Button>
                                     </td>
                                 </tr>
                             ))}

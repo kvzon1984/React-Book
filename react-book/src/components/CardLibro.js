@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { format } from 'date-fns';
 import { Tab } from '@headlessui/react'
 import React, { useState, useContext } from 'react'
-import Button from './Button';
+import Button from '../helpers/Button';
 import esLocale from 'date-fns/locale/es';
 import Swal from 'sweetalert2'
-import { NavLink } from './Navlink';
+import { NavLink } from '../helpers/Navlink';
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -19,7 +19,7 @@ function classNames(...classes) {
 
         function addFavoritos(movie) {
 
-            if (!checkIfBookExists(movie, favoritos)) {
+            if (!isBookInFavoritos(movie, favoritos)) {
                 setFavoritos([...favoritos, movie])
                 Swal.fire({
                     position: 'top-end',
@@ -40,7 +40,7 @@ function classNames(...classes) {
 
         }
 
-        const checkIfBookExists = (nuevoLibro, lista) => {
+        const isBookInFavoritos = (nuevoLibro, lista) => {
             return lista.includes(nuevoLibro);
         };
 
@@ -108,7 +108,7 @@ function classNames(...classes) {
                         key={post.id}
                         className="relative rounded-md p-3 hover:bg-gray-100"
                     >
-                        <h3 className="text-xl font-medium leading-5">
+                        <h3  className="text-xl font-medium leading-5">
                         {post.title}
                         </h3>
 
@@ -126,14 +126,14 @@ function classNames(...classes) {
                                 ? <li>
                                     <Button className="bg-[#2563eb] w-full rounded-lg h-10 hover:bg-[#1d4ed8]"
                                         onClick={(e)=>addFavoritos(props.libro)}>
-                                        <FontAwesomeIcon icon={faHeart} />
-                                            { post.favorito }
+                                        <FontAwesomeIcon icon={faHeart} style={{color:"#892C2C"}}/>
+                                            {" "} { post.favorito }
                                     </Button>
                                 </li>
                                 : <li>
                                     <NavLink
                                         to={`/detalles-libros/${post.isbn}`}
-                                        className=" bg-[#2563eb] py-3 md:px-52 rounded-lg h-10 hover:bg-[#1d4ed8]"
+                                        className="  bg-[#2563eb] mt-3 py-3 md:px-56 rounded-lg h-12 hover:bg-[#1d4ed8]"
                                         >
                                         Ver
                                     </NavLink>

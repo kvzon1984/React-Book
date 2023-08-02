@@ -1,7 +1,7 @@
 import React from 'react';
 import { LibroContext } from "../context/LibrosContext"
 import { useContext } from "react"
-import CardLibro from "../helpers/CardLibro";
+import CardLibro from "./CardLibro";
 
 const DetalleLibros = () => {
     const { libros } = useContext(LibroContext)

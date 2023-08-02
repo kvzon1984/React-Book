@@ -10,7 +10,7 @@ export const LibroProvider = ({ children }) => {
     const [ libros, setLibros] = useState(INITIAL_STATE)
 
     useEffect(() => {
-        axios.get('https://www.anapioficeandfire.com/api/books')
+        axios.get('https://www.anapioficeandfire.com/api/books?page1&pageSize=50')
         .then(response => {
             setLibros(response.data)
         })

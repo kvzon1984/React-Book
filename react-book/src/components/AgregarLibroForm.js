@@ -1,5 +1,5 @@
 import { useFormik } from 'formik'
-import Input from './Input'
+import Input from '../helpers/Input'
 import React from 'react';
 
 const validate = (values) => {
@@ -44,42 +44,45 @@ const AgregarLibroForm = () => {
 
     return(
         <>
-            <div className='bg-[#4b5563] container mx-auto w-1/2 px-4 rounded-lg px-8 py-8 mt-8'>
-                <form onSubmit={formik.handleSubmit} className='flex flex-col space-y-2 '>
-                    <label className='text-3xl'>Título</label>
+            <div className='bg-[#94a3b8] container mx-auto w-1/2 px-4 rounded-lg px-8 py-8 mt-8'>
+                <form data-testid="agregar-libro-form" onSubmit={formik.handleSubmit} className='flex flex-col space-y-2 '>
+                    <label className='text-2xl'>Título</label>
                     <Input
+                        role='titulo'
                         className='w-full h-10 '
                         type='text'
                         { ... formik.getFieldProps('titulo')}
                     />
-                    {formik.touched.titulo && formik.errors.titulo ? <p className='w-full text-2xl text-[#7f1d1d] py-5'>{formik.errors.titulo}</p> : null}
+                    {formik.touched.titulo && formik.errors.titulo ? <p className='w-full text-xl text-[#7f1d1d] py-1'>{formik.errors.titulo}</p> : null}
                     <br/>
-                    <label className='text-3xl'>Autor</label>
+                    <label className='text-2xl'>Autor</label>
                     <Input
-
+                        role='autor'
                         className='w-full h-10'
                         { ... formik.getFieldProps('autor')}
                         type='text'
                     />
-                    {formik.touched.autor && formik.errors.autor ? <p className='w-full text-2xl text-[#7f1d1d] py-5'>{formik.errors.autor}</p> : null}
+                    {formik.touched.autor && formik.errors.autor ? <p className='w-full text-xl text-[#7f1d1d] py-1'>{formik.errors.autor}</p> : null}
                     <br/>
-                    <label className='text-3xl'>Género</label>
+                    <label className='text-2xl'>Género</label>
                     <Input
+                        role='genero'
                         className='w-full h-10'
                         type='text'
                         { ... formik.getFieldProps('genero')}
                     />
-                    {formik.touched.genero && formik.errors.genero ? <p className='w-full text-2xl text-[#7f1d1d] py-5'>{formik.errors.genero}</p> : null}
+                    {formik.touched.genero && formik.errors.genero ? <p className='w-full text-xl text-[#7f1d1d] py-1'>{formik.errors.genero}</p> : null}
                     <br/>
-                    <label className='text-3xl'>Fecha Publicación</label>
+                    <label className='text-2xl'>Fecha Publicación</label>
                     <Input
+                        role='fechaPublicacion'
                         className='w-full h-10'
                         type='date'
                         { ... formik.getFieldProps('fechaPublicacion')}
                     />
-                    {formik.touched.fechaPublicacion && formik.errors.fechaPublicacion ? <p className='w-full text-2xl text-[#7f1d1d] py-5'>{formik.errors.fechaPublicacion}</p> : null}
+                    {formik.touched.fechaPublicacion && formik.errors.fechaPublicacion ? <p className='w-full text-xl text-[#7f1d1d] py-1'>{formik.errors.fechaPublicacion}</p> : null}
                     <br/>
-                    <button type='submit' className='bg-sky-500/100 p-4 rounded-lg'>Guardar Libro</button>
+                    <button role='button' type='submit' className='bg-sky-500/100 p-4 rounded-lg'>Agregar Libro</button>
                 </form>
             </div>
         </>
