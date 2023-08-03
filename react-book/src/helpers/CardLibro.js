@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { format } from 'date-fns';
 import { Tab } from '@headlessui/react'
 import React, { useState, useContext } from 'react'
-import Button from '../helpers/Button';
+import Button from './Button';
 import esLocale from 'date-fns/locale/es';
 import Swal from 'sweetalert2'
-import { NavLink } from '../helpers/Navlink';
+import { NavLink } from './Navlink';
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
