@@ -15,6 +15,7 @@ Abra el archivo en su editor de texto favorito y dirijase a la raiz del proyecto
 Una vez en la raiz del proyecto necesitamos instalar las dependecias
 
 Abra una terminal copie y pegue el siguiente comando:
+
 ```bash
 npm install
 ```
@@ -34,7 +35,6 @@ npm start
 Esto ejecuta la aplicación en modo de desarrollo.
 Abra su navegador web y pegue la siguiente url http://localhost:3000 para verlo en su navegador.
 
-
 ## Corriendo los test unitarios
 
 Para correr los test debe parar la terminal si es que esta corriendo **cltr + c** y bastaria con simplemente estando en la raiz del proyecto copiar y pegar el siguiente código en la terminal:
@@ -48,11 +48,10 @@ Pasa salir del modo test presione **cltr + c**
 ## Dependencias Utilizadas (Paquetes)
 
 #### "@fortawesome":
-Aplicación que permite crear y administrar íconos, aumentando la velocidad del sitio web ya que carga solo los íconos que se utilizan en la aplicación. Iconos personalizados entre otros beneficios. [Mas información](https://fontawesome.com/)
-
+Paquete que permite crear y administrar íconos, aumentando la velocidad del sitio web ya que carga solo los íconos que se utilizan en la aplicación. Iconos personalizados entre otros beneficios. [Mas información](https://fontawesome.com/)
 
 #### "@headlessui":
-Un conjunto de componentes de interfaz de usuario completamente accesibles y sin estilo, diseñados para integrarse a la perfección con Tailwind CSS. [Mas información](https://headlessui.com/)
+Es un conjunto de componentes de interfaz de usuario completamente accesibles y sin estilo, diseñados para integrarse a la perfección con Tailwind CSS. [Mas información](https://headlessui.com/)
 
 #### "tailwindcss":
 Es una herramienta que nos permite dar estilos a nuestros sitios web de forma mas rapida y simple. [Mas información](https://tailwindcss.com/)
@@ -60,13 +59,11 @@ Es una herramienta que nos permite dar estilos a nuestros sitios web de forma ma
 #### "@testing-library":
 Utilidades de prueba simples y completas que fomentan las buenas prácticas de prueba, es una herramienta para poder realizar los test de una forma en el un usuario interactua con la aplicación . [Mas información](https://testing-library.com/)
 
-
 #### "axios":
 Axios es un cliente HTTP simple basado en promesas para el navegador y node.js. Axios proporciona una biblioteca fácil de usar en un paquete pequeño con una interfaz muy extensible. [Mas información](https://axios-http.com/)
 
 #### "date-fns":
 date-fns proporciona el conjunto de herramientas más completo, pero simple y consistente para manipular fechas de JavaScript en un navegador y Node.js. [Mas información](https://date-fns.org/)
-
 
 #### "formik":
 Formik es la biblioteca de formularios de código abierto más popular del mundo para React y React Native, Formik viene con soluciones probadas en batalla para validación de entrada, formateo, enmascaramiento, arreglos y manejo de errores. Esto significa que pasa menos tiempo escribiendo código de formulario y más tiempo construyendo su próxima gran cosa. [Mas información](https://formik.org/)
