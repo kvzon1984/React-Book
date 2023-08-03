@@ -20,7 +20,7 @@ Abra una terminal copie y pegue el siguiente comando:
 npm install
 ```
 
-    Nota: esto generara un fichero node_modules y un archivo package-lock.json en la raiz del proyecto
+    Nota: esto generara un fichero node_modules en la raiz del proyecto
 
 ## Levantando el proyecto
 
