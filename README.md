@@ -6,7 +6,7 @@ La aplicación se encuentra alojada en un repositori de github [github-repositor
 
 Para poder levantar la aplicación lo promero es descargar o clonar la rama master desde github.
 
-    Nota: En el caso de descargar la aplicación debe descomprimir el archivo
+Nota: En el caso de descargar la aplicación debe descomprimir el archivo
 
 Abra el archivo en su editor de texto favorito y dirijase a la raiz del proyecto
 
@@ -15,8 +15,9 @@ Abra el archivo en su editor de texto favorito y dirijase a la raiz del proyecto
 Una vez en la raiz del proyecto necesitamos instalar las dependecias
 
 Abra una terminal copie y pegue el siguiente comando:
-
-- `npm install`
+```bash
+npm install
+```
 
     Nota: esto generara un fichero node_modules y un archivo package-lock.json en la raiz del proyecto
 
