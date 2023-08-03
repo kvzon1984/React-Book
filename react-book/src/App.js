@@ -3,7 +3,7 @@ import { LibroProvider } from "./context/LibrosContext";
 import { Route, Routes } from 'react-router-dom';
 import AgregarLibros from "./components/AgregarLibros";
 import DetalleLibro from "./components/DetalleLibro";
-import DetalleLibros from "./components/DettallesLibros";
+import DetalleLibros from "./components/DetallesLibros";
 import FavoritosLibros from "./components/FavoritoLibros";
 import ListarLibros from "./components/ListarLibros";
 import Navbar from "./components/Navbar";
