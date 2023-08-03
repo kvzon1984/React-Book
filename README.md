@@ -4,14 +4,11 @@ La aplicación se encuentra alojada en un repositori de github [github-repositor
 
 ## Levantar aplicación
 
-Paso 1: Crea una carpeta en la ubicación de tu elección para el proyecto.
+Paso 1: Descarga el proyecto desde GitHub o clona la rama principal del repositorio utilizando Git en la ubicación de tu elección.
 
-Paso 2: Descarga el proyecto desde GitHub o clona la rama principal del repositorio utilizando Git.
-Si descargas el proyecto, asegúrate de descomprimir el archivo en la carpeta recién creada.
+Paso 2: Abrir el proyecto en el editor de texto favorito (por ejemplo, Visual Studio Code, Sublime Text, Atom, etc.).
 
-Paso 3: Abrir el proyecto en el editor de texto favorito (por ejemplo, Visual Studio Code, Sublime Text, Atom, etc.).
-
-Paso 4: Navega hasta la raíz del proyecto que acabas de crear o clonary abre una terminal integrada en tu editor de texto o abre una terminal en la ubicación del proyecto.
+Paso 3: Navega hasta la raíz del proyecto que acabas de crear o clonary abre una terminal integrada en tu editor de texto o abre una terminal en la ubicación del proyecto.
 
 ## Instalar paquetes (Dependencias)
 
