@@ -4,7 +4,7 @@ La aplicación se encuentra alojada en un repositori de github [github-repositor
 
 ## Levantar aplicación
 
-Para poder levantar la aplicación lo promero es descargar o clonar la rama master desde github.
+Para poder levantar la aplicación lo promero es crear una carpeta donde guste y descargar o clonar la rama master desde github.
 
 Nota: En el caso de descargar la aplicación debe descomprimir el archivo
 
